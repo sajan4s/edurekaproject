@@ -14,7 +14,7 @@ pipeline {
 			sh 'sudo apt-get update'
 			sh 'sudo apt-get install puppet -y'
 			sh 'sudo sh -c "echo [agent] >> /etc/puppet/puppet.conf"'
-		 	sh 'sudo sh -c "echo server=ip-172-31-15-136.ap-south-1.compute.internal >> /etc/puppet/puppet.conf"'              
+		 	sh 'sudo sh -c "echo server=ip-172-31-10-251.ap-south-1.compute.internal >> /etc/puppet/puppet.conf"'              
 			sh 'sudo puppet agent --enable'
 			echo 'Puppet will install Docker & Git ...'
 			sh 'sudo puppet agent -t|| true'
