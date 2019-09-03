@@ -24,7 +24,7 @@ pipeline {
                 }
                 steps {
                         echo 'Puppet master cert sign'
-                        sh 'sudo puppet cert sign --all'                                               
+                        sh 'puppet cert sign --all'                                               
                        }
                 }
             stage('Job 3') {
