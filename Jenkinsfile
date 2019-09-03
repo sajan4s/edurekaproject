@@ -49,7 +49,7 @@ pipeline {
                         echo 'Docker image build started..'
                     }
                 }
-            stage('Job 5) {
+            stage('Job 5') {
                 steps {
                         sh 'sudo docker stop ${JOB_NAME}${BUILD_NUMBER}||true'
                         sh 'sudo docker rm ${JOB_NAME}${BUILD_NUMBER}||true'
