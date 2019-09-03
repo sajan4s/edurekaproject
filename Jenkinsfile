@@ -4,7 +4,7 @@ pipeline {
 	        BUILD_NUMBER = "${env.BUILD_NUMBER}"
 	    	}
 	agent {
-        	label 'puppetagent'
+        	label 'agenttest'
 	       	}
 	stages {
 	    stage('Job123PREPARE') {
