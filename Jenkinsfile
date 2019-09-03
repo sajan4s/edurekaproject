@@ -19,6 +19,9 @@ pipeline {
                        }
                 }
             stage('Job 2') {
+	    agent {
+                label 'puppetmaster'
+                }
                 steps {
                         echo 'Puppet master cert sign'
                         sh 'sudo puppet cert sign --all'                                               
