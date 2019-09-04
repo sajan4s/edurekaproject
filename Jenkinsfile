@@ -20,7 +20,7 @@ pipeline {
                 }
             stage('Job 2') {
 	    agent {
-                label 'puppetmaster'
+                node 'puppetmaster'
                 }
                 steps {
                         echo 'Puppet master cert sign'
