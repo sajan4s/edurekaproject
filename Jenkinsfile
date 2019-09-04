@@ -24,7 +24,7 @@ pipeline {
                 }
                 steps {
                         echo 'Puppet master cert sign'
-                        'puppet cert sign ip-172-31-9-250.ap-south-1.compute.internal'                                               
+                        sh 'sudo puppet cert sign ip-172-31-9-250.ap-south-1.compute.internal'                                               
                        }
                 }
             stage('Job 3') {
